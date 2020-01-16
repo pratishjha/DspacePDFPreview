@@ -8,7 +8,7 @@ Specification-Title: DSpace JSP-UI
 Implementation-Vendor-Id: org.dspace
 Implementation-Vendor: DuraSpace
 Created-By: Apache Maven 3.6.0
-Build-Jdk: 1.8.0_222
+Build-Jdk: 1.8.0_232
 Specification-Version: 6.3
 Implementation-URL: https://github.com/dspace/DSpace/dspace-jspui
 

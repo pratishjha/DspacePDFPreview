@@ -1038,10 +1038,10 @@ public class ItemTag extends TagSupport
 
             					out
                                     .print("<tr><td headers=\"t1\" class=\"standard break-all\">");
-                                out.print("<a ");
-            					out.print(bsLink);
+                                
+            					
             					out.print(b.getName());
-                                out.print("</a>");
+                                
                                 // check whether the Bitstream is readable for 
                                 // anonymous users
                                 boolean anonymousReadable = false;
@@ -1190,15 +1190,7 @@ public class ItemTag extends TagSupport
 
                                 //... then carry on with the download button
 
-                                out.print("<a class=\"btn btn-primary\" ");
-
-            					out
-                                    .print(bsLink
-                                            + LocaleSupport
-                                                    .getLocalizedMessage(
-                                                            pageContext,
-                                                            "org.dspace.app.webui.jsptag.ItemTag.view")
-                                            + "</a>");
+                                
             					
 								try {
 									if (showRequestCopy && !authorizeService
