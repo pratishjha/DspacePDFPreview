@@ -1131,7 +1131,7 @@ public class ItemTag extends TagSupport
                                 .print("</td><td headers=\"t4\" class=\"standard\">");
             					out.print(b.getFormatDescription(context));
             					out
-                                    .print("</td><td class=\"standard\" align=\"center\">");
+                                    .print("</td><td class=\"standard\" width="500px" align=\"center\">");
 
             					// is there a thumbnail bundle?
             					if ((thumbs.size() > 0) && showThumbs)
@@ -1181,12 +1181,13 @@ public class ItemTag extends TagSupport
 
                                     previewBitstreamURL += UIUtil.encodeBitstreamName(b.getName(), Constants.DEFAULT_ENCODING);
 
-                                    out.print("&nbsp;<a id=\"pdf_preview_file_"+b.getSequenceID()+"\" class=\"btn btn-success pdf_preview\" target=\"_blank\" href=\""+previewBitstreamURL+"\">");
-                                    out.print(LocaleSupport.getLocalizedMessage(
-                                            pageContext,"org.dspace.app.webui.jsptag.ItemTag.preview_pdf")
-                                            + "</a>");
+                                    
+
+                                    out.print("&nbsp;<iframe id=\"pdf_preview_file_"+b.getSequenceID()+"\" class=\"pdf\" width=\"100%\" height=\"560px\" src=\""+previewBitstreamURL+"\">");
+                                    out.print("</iframe>");
 
                                 }
+
 
                                 //... then carry on with the download button
 

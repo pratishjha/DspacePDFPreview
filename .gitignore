@@ -1,1 +1,3 @@
 target
+modules/xmlui/target
+modules/*/target
